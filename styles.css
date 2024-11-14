@@ -1,0 +1,132 @@
+* { color: #FFF; font-family: system-ui; }
+
+body {
+      background-color: black;
+
+      display: flex;
+      justify-content: center;
+}
+
+#btn-entrar {
+      width: 90px;
+      height: 40px;
+      
+      top: 80px;
+      position: absolute;
+
+      border: none;
+      outline: none;
+      border-radius: 2px;
+
+      font-size: 16px;
+
+      background-color: #1D1DDD;
+
+      transition: .8s background;
+}
+#btn-entrar:hover {
+      cursor: pointer;
+      background: #2121bb;
+}
+
+/* Modal */
+
+.modalForm {
+      gap: 8px;
+      display: none; /* Temporário */
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      margin-top: 40px;
+
+      width: 500px;
+      height: 230px;
+
+      border-radius: 18px;
+
+      font-size: 20px;
+      
+      background-color: #1D1D1D;
+}
+.modalForm h2 { margin: 8px 0; }
+.modalForm input {
+      width: 380px;
+      height: 38px;
+      
+      padding: 0 8px;
+      border-radius: 8px;
+
+      border: none;
+      outline: none;
+
+      font-size: 16px;
+      
+      background-color: #000;
+}
+.modalForm .btn-group {
+      width: 100%;
+
+      gap: 8px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+}
+.modalForm button {
+      border: none;
+      outline: none;
+
+      width: 190px;
+      height: 28px;
+
+      border-radius: 4px;
+
+      font-size: 16px;
+
+      background-color: #000;
+}
+.modalForm #btn-cancel:hover {
+      cursor: pointer;
+      background: #F00;
+      
+      transition: .8s background;
+}
+.modalForm #btn-cancel:hover {
+      cursor: pointer;
+      background: rgb(201, 5, 5);
+}
+
+.modalForm #btn-entrarModal:hover {
+      cursor: pointer;
+      background: #1D1DDD;
+
+      transition: .8s background;
+}
+.modalForm #btn-entrarModal:hover {
+      cursor: pointer;
+      background: #2121bb;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1350px) {
+      .modalForm {
+            width: 40%;
+      }
+}
+
+@media screen and (max-width: 980px) {
+      .modalForm input {
+            width: 80%;
+      } 
+
+      .modalForm button {
+            width: 40%;
+      }
+}
+
+@media screen and (max-width: 430px) {
+      .modalForm {
+            width: 80%;
+      }      
+}
